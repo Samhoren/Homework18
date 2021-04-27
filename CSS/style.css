@@ -1,0 +1,30 @@
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 33%
+}
+
+.workGrid {
+    display: grid;
+}
+
+.item1 {
+    grid-area: myArea;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-area; 'myArea  myArea  myArea';
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+     flex-direction: column;
+     width: 100%;
+     grid-template-areas:
+     "mySkills"
+     "myWork"
+    }
+  }
